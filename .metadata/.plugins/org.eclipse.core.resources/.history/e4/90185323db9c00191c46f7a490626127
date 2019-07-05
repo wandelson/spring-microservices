@@ -1,0 +1,11 @@
+package br.com.institutointegra.sample.service.impl;
+
+import java.util.List;
+
+import br.com.institutointegra.model.Person;
+
+public class PersonServiceImpl : PersonService {
+	
+
+	
+}

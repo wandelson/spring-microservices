@@ -1,0 +1,15 @@
+package br.com.institutointegra.api.service.impl;
+
+import br.com.institutointegra.api.dto.ClientDto;
+import br.com.institutointegra.api.service.ClientService;
+
+@Service
+public class ClientServiceImpl implements ClientService {
+
+	@Override
+	public ClientDto save(ClientDto dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

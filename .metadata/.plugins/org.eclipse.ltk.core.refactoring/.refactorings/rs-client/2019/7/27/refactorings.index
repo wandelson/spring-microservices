@@ -1,0 +1,23 @@
+1562165191562	Move compilation unit
+1562165197488	Delete element
+1562165205989	Delete element
+1562165226900	Rename package 'br.com.institutointegra.sample.enums'
+1562165238092	Rename package 'br.com.institutointegra.sample.model'
+1562165260731	Rename package 'br.com.institutointegra.sample.repository'
+1562165275774	Rename package 'br.com.institutointegra.sample.resource'
+1562165283875	Rename package 'br.com.institutointegra.sample.service'
+1562165292555	Rename package 'br.com.institutointegra.sample.service.impl'
+1562165310973	Rename package 'br.com.institutointegra.sample.api.impl'
+1562165384854	Rename type 'Person'
+1562165656701	Encapsulate field 'name'
+1562165662569	Encapsulate field 'iduser'
+1562165670020	Encapsulate field 'createDate'
+1562165677444	Encapsulate field 'alterDate'
+1562165789470	Rename type 'PersonRepository'
+1562165812495	Rename type 'PersonResource'
+1562165848935	Rename type 'PersonService'
+1562165900747	Rename type 'PersonServiceImpl'
+1562166008770	Copy packages
+1562167357968	Delete element
+1562167475185	Copy file
+1562167954063	Copy compilation unit

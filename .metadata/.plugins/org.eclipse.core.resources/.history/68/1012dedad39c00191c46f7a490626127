@@ -1,0 +1,5 @@
+package br.com.institutointera.sample.enums;
+
+public enum Gender {
+
+}

@@ -1,0 +1,8 @@
+package br.com.institutointegra.api.dto;
+
+public class ClientDto {
+
+	private Long id; 
+	
+	
+}

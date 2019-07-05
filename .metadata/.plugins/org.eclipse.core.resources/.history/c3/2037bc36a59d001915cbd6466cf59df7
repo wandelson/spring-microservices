@@ -1,0 +1,30 @@
+package br.com.institutointegra.api.model;
+
+import java.sql.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+@Entity
+public class Order {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private Long idClient;
+	private Date created_date;
+	private Date alter_date;
+	public Long getIdClient() {
+		return idClient;
+	}
+	public void setIdClient(Long idClient) {
+		this.idClient = idClient;
+	}
+
+
+
+	
+}

@@ -1,0 +1,38 @@
+package br.com.institutointegra.sample.resource;
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.institutointegra.model.Person;
+import br.com.institutointegra.sample.service.PersonService;
+
+@RestController
+@RequestMapping("/api/people")
+public class PersonResource {
+
+	@Autowired
+	private PersonService personService;
+	
+	@GetMapping("/")
+	public List<Person> getAll(){
+		return this.personService.getAll();
+	}
+	
+	@PostMapping("/")
+	public Person save(@RequestBody Person p ) {
+		return this.personService.save(p);
+	}
+	
+	@PostMapping("/")
+	public Person update(@RequestBody Person p ) {
+		return this.personService.save(p);
+	}
+	
+}

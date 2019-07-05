@@ -1,0 +1,9 @@
+package br.com.institutointegra.sample;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@EnableSwagger2
+public class SwaggerConfig {
+
+}

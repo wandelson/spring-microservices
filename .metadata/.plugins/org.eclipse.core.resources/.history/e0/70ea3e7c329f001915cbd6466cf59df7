@@ -1,0 +1,14 @@
+server:
+  port: ${PORT:8086}
+  
+ 
+store: 
+  url:
+    rs-client: ${URL_RS_CLIENT:http://localhost:8081}
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL1:http://localhost:8761/eureka/eureka}
+  instance:
+    prefer-ip-address: true

@@ -1,0 +1,13 @@
+package br.com.institutointegra.model;
+
+import br.com.institutointera.sample.enums.Gender;
+
+public class Person {
+
+	private Long id;
+	private String firstName;
+	private String lastName;
+	private int age;
+	private Gender gender;
+	
+}

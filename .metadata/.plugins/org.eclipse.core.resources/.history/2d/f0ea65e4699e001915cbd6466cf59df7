@@ -1,0 +1,28 @@
+package br.com.institutointegra.api.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpRequest;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import br.com.institutointegra.api.dto.ClientDto;
+import br.com.institutointegra.api.service.ClientService;
+
+@Service
+public class ClientServiceImpl implements ClientService {
+
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	@Override
+	public ClientDto save(ClientDto dto) {
+		HttpHeaders headers = new HttpHeaders();
+		HttpEntity<ClientDto>  request = new HttpEntity<ClientDto>(dto, headers);
+		restTemplate.postForEntity("http://localhost:8081/api/clients/", request, ClientDto.class);
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

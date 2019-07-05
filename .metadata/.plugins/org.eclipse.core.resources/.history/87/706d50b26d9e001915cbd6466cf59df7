@@ -1,0 +1,18 @@
+package br.com.institutointegra.api.resource;
+
+import javax.websocket.ClientEndpoint;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.institutointegra.api.dto.ClientDto;
+
+@RestController
+@RequestMapping("/api")
+public class ClientResource {
+
+	@PostMapping
+	public ClientDto save(@RequestBody ClientDto dto)
+	
+}

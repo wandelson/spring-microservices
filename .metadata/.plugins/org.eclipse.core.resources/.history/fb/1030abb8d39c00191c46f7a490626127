@@ -1,0 +1,5 @@
+package br.com.institutointera.model;
+
+public class Person {
+
+}

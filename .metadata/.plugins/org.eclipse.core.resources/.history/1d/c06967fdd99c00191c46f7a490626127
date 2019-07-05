@@ -1,0 +1,5 @@
+package br.com.institutointegra.sample.repository;
+
+public interface PersonRepository {
+
+}

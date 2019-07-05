@@ -1,0 +1,9 @@
+package br.com.institutointegra.api.service;
+
+import br.com.institutointegra.api.dto.ClientDto;
+
+public interface ClientService {
+
+	ClientDtontDto save (ClientDTO dto);
+	
+}

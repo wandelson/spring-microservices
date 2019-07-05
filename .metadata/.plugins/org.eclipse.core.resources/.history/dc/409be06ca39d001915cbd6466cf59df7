@@ -1,0 +1,38 @@
+package br.com.institutointegra.api.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import br.com.institutointegra.api.model.Order;
+import br.com.institutointegra.api.repository.OrderRepository;
+import br.com.institutointegra.api.service.ClientService;
+
+@Service
+public class ClientServiceImpl implements ClientService {
+
+	@Autowired
+	private OrderRepository clientRepository;
+	
+	@Override
+	public List<Order> getAll() {
+		return this.clientRepository.findAll();
+	}
+
+	@Override
+	public Order save(Order p) {
+		return this.clientRepository.save(p);
+	}
+
+	@Override
+	public Order findById(Long id) {
+		return this.clientRepository.findById(id).orElse(null);
+	}
+
+	@Override
+	public void delete(Long id) {
+		this.clientRepository.deleteById(id);
+	}
+
+}

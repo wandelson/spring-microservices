@@ -1,0 +1,29 @@
+package br.com.institutointegra.sample.resource;
+
+
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.institutointegra.sample.enums.Gender;
+import br.com.institutointegra.sample.service.PersonService;
+
+@RestController
+@RequestMapping("/api/person")
+public class PersonResource {
+
+	@Autowired
+	private PersonService personService;
+	
+	
+	public List<Person> getAll(){
+		return this.personService.getAll(;
+	}
+	
+}
